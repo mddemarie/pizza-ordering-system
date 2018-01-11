@@ -1,0 +1,14 @@
+# Python
+**/__pycache__/
+env
+myvenv
+
+# Python files
+*.pyc
+*.pyo
+
+# Mac files
+.DS_Store
+
+# Project
+db.sqlite3
