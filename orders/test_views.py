@@ -95,6 +95,5 @@ class OrderTest(APITestCase):
         """
         Non-user is allowed to change a pizza order.
         """
-        response = self.client.delete(self.order_url, self.order_get, format='json')
+        response = self.client.delete(self.order_url)
         self.assertEqual(response.status_code, status.HTTP_204_NO_CONTENT, response.data)
-        self.assertEqual(response.data['id': 1], '')
