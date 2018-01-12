@@ -27,7 +27,7 @@ pyenv activate test-pyenv
 
 ### Install Django
 
-Now that you're inside a virtualenv environment, you can install our package requirements:
+Now that you're inside a virtualenv environment, you can install the package requirements:
 ```
 pip install django
 pip install djangorestframework
@@ -61,6 +61,17 @@ With the command:
 ```
 python manage.py test
 ```
+
+Everything works! Yeeeey! :)
+
+## Suggestions for Improvement
+
+- write more edge cases integration tests for API endpoint
+- write unit tests for the model Order
+- create a requirements.txt file that you install with a single command with all necessary packages
+- convert the setup into Docker setup - this will enable the easier usage
+- the additional field 'created' with the date was not necessary in models.py
+- it would be great to have a field 'pizza_choice' in models.py, I think
 
 
 
