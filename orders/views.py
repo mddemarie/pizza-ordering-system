@@ -5,6 +5,7 @@ from rest_framework.viewsets import GenericViewSet
 from orders.models import Order as OrderModel
 from orders.serializers import OrderSerializer
 
+
 class OrderViewSet(
     mixins.CreateModelMixin,
     mixins.UpdateModelMixin,
